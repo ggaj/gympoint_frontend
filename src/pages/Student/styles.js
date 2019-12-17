@@ -43,14 +43,17 @@ export const Container = styled.div`
   }
 `;
 
-export const TableView = styled.div`
-  height: 400px;
+export const TableView = styled.table`
+  padding: 20px;
   background: #fff;
   border-radius: 4px;
 
-  table {
-    padding: 15px;
+  tr {
+    text-align: left;
+    border: 1px solid #dddddd;
 
-
+    td {
+      padding: 10px 0px;
+    }
   }
 `;
