@@ -15,24 +15,24 @@ export default function Headers() {
       <Content>
         <nav>
           <img src={logo} alt="GoBarber" />
-          <Link to="/dashboard">Dashboard</Link>
+          <div>gympoint</div>
+          <Link to="/dashboard" active="true">
+            Alunos
+          </Link>
+          <Link to="/dashboard" className="ab">
+            Planos
+          </Link>
+          <Link to="/dashboard" className="ab">
+            Matrículas
+          </Link>
+          <Link to="/dashboard" className="ab">
+            Pedido de Auxílio
+          </Link>
         </nav>
         <aside>
-          <Notifications />
           <Profile>
-            <div>
-              <strong>{user.name}</strong>
-              <Link to="/profile">Meus Perfil</Link>
-            </div>
-            <img
-              src={
-                user.avatar
-                  ? user.avatar.url ||
-                    'https://api.adorable.io/avatars/50/abott@adorable.png'
-                  : 'https://api.adorable.io/avatars/50/abott@adorable.png'
-              }
-              alt="avatar"
-            />
+            <strong>Gildo Gomes</strong>
+            <Link to="/profile">sair do sistema</Link>
           </Profile>
         </aside>
       </Content>

@@ -3,12 +3,12 @@ import styled from 'styled-components';
 export const Container = styled.div`
   background: #fff;
   padding: 0 30px;
+  border: solid 1px #dddddd;
 `;
 
 export const Content = styled.div`
   height: 64px;
   margin: 0 auto;
-  max-width: 900px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,17 +16,23 @@ export const Content = styled.div`
   nav {
     display: flex;
     align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
 
-    img {
-      margin-right: 30px;
-      padding-right: 30px;
-      border-right: 1px solid #eee;
+    div {
+      color: #ee4d64;
+      padding-left: 10px;
+      padding-right: 20px;
+      border-right: 1px solid #979797;
     }
 
     a {
-      text-transform: uppercase;
-      color: #7159c1;
-      font-weight: bold;
+      color: #444444;
+      margin-left: 20px;
+    }
+
+    .ab {
+      color: #999999;
     }
   }
 
@@ -38,30 +44,16 @@ export const Content = styled.div`
 
 export const Profile = styled.div`
   display: flex;
-  margin-left: 20px;
-  padding-left: 20px;
-  border-left: 1px solid #eee;
+  flex-direction: column;
+  justify-content: flex-end;
 
-  div {
-    text-align: right;
-    margin-right: 10px;
-
-    strong {
-      display: block;
-      color: #333;
-    }
-
-    a {
-      display: block;
-      margin-top: 2px;
-      font-size: 12px;
-      color: #999;
-    }
+  strong {
+    color: #666666;
   }
 
-  img {
-    height: 32px;
-    width: 32px;
-    border-radius: 50%;
+  a {
+    margin-top: 2px;
+    font-size: 12px;
+    color: #de3b3b;
   }
 `;
