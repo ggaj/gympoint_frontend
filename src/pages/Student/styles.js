@@ -11,7 +11,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin: 30px 0px 20px;
+    margin-top: 30px;
 
     strong {
       font-size: 24px;
@@ -44,16 +44,34 @@ export const Container = styled.div`
 `;
 
 export const TableView = styled.table`
+  margin-top: 40px;
+  width: 100%;
+  border-spacing: 0px;
   padding: 20px;
   background: #fff;
   border-radius: 4px;
+  width: 100%;
 
-  tr {
+  th {
     text-align: left;
-    border: 1px solid #dddddd;
+    text-transform: uppercase;
+  }
 
-    td {
-      padding: 10px 0px;
-    }
+  tr td {
+    color: #666666;
+    padding: 20px 0px;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .edit {
+    color: #4d85ee !important;
+  }
+  .remove {
+    color: #de3b3b;
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+    padding-bottom: 5px;
   }
 `;

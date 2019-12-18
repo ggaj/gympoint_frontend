@@ -18,23 +18,33 @@ export default function Alunos() {
           <th width="40%">Nome</th>
           <th width="30%">E-mail</th>
           <th width="10%">Idade</th>
-          <td width="10%"> </td>
-          <td width="10%"> </td>
+          <th width="10%"> </th>
+          <th width="10%"> </th>
         </tr>
-        <tr>
-          <td width="40%">Gildo Gomes de Araujo Junior</td>
-          <td width="30%" />
-          <td width="10%" />
-          <td width="10%" />
-          <td width="10%" />
-        </tr>
-        <tr>
-          <td width="40%">Gildo Gomes de Araujo Junior</td>
-          <td width="30%" />
-          <td width="10%" />
-          <td width="10%" />
-          <td width="10%" />
-        </tr>
+        <tbody>
+          <tr>
+            <td width="40%">Gildo Gomes de Araujo Junior</td>
+            <td width="30%">gildoaraujo@teste.com.br</td>
+            <td width="10%">33</td>
+            <td width="10%" className="edit">
+              editar
+            </td>
+            <td width="10%" className="remove">
+              apagar
+            </td>
+          </tr>
+          <tr>
+            <td width="40%">Gildo Gomes de Araujo Junior</td>
+            <td width="30%">gildoaraujo@teste.com.br</td>
+            <td width="10%">33</td>
+            <td width="10%" className="edit">
+              editar
+            </td>
+            <td width="10%" className="remove">
+              apagar
+            </td>
+          </tr>
+        </tbody>
       </TableView>
     </Container>
   );

@@ -27,12 +27,16 @@ export const Content = styled.div`
     }
 
     a {
-      color: #444444;
+      color: #979797;
       margin-left: 20px;
     }
 
-    .ab {
-      color: #999999;
+    .ativo {
+      color: #444444;
+    }
+
+    a:hover {
+      color: #444444;
     }
   }
 
