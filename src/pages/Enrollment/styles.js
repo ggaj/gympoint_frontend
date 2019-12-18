@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   margin: 0px auto;
-  max-width: 1200px;
+  max-width: 1380px;
 
   header {
     display: flex;
@@ -28,16 +28,7 @@ export const Container = styled.div`
         background: #ee4d64;
         border-radius: 4px;
         font-size: 14px;
-        margin-right: 10px;
         height: 34px;
-      }
-
-      input {
-        padding: 7px 10px 7px 28px;
-        border: 1px solid #dddddd;
-        width: 240px;
-        border-radius: 4px;
-        height: 36px;
       }
     }
   }
@@ -52,14 +43,22 @@ export const TableView = styled.table`
   width: 100%;
 
   th {
-    text-align: left;
     text-transform: uppercase;
+
+    &:first-child {
+      text-align: left;
+    }
   }
 
   tr td {
+    text-align: center;
     color: #666666;
     padding: 20px 0px;
     border-bottom: 1px solid #eeeeee;
+
+    &:first-child {
+      text-align: left;
+    }
   }
 
   .edit {

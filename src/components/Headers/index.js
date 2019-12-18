@@ -16,19 +16,50 @@ export default function Headers() {
           <img src={logo} alt="GoBarber" />
           <div>gympoint</div>
           <Link
-            to="/alunos"
-            className={window.location.pathname === '/alunos' ? 'ativo' : ''}
+            to="/student"
+            className={
+              window.location.pathname === '/student' ||
+              window.location.pathname === '/student/register'
+                ? 'ativo'
+                : ''
+            }
           >
             Alunos
           </Link>
           <Link
-            to="/planos"
-            className={window.location.pathname === '/planos' ? 'ativo' : ''}
+            to="/plans"
+            className={
+              window.location.pathname === '/plans' ||
+              window.location.pathname === '/plans/register'
+                ? 'ativo'
+                : ''
+            }
           >
             Planos
           </Link>
-          <Link to="/dashboard">Matrículas</Link>
-          <Link to="/dashboard">Pedido de Auxílio</Link>
+          <Link
+            to="/enrollment"
+            className={
+              window.location.pathname === '/enrollment' ||
+              window.location.pathname === '/enrollment/register'
+                ? 'ativo'
+                : ''
+            }
+          >
+            Matrículas
+          </Link>
+          <Link
+            to="/help"
+            className={
+              window.location.pathname === '/help' ||
+              window.location.pathname === '/help/register'
+                ? 'ativo'
+                : ''
+            }
+          >
+            Pedido de Auxílio
+          </Link>
+          <Link to="/help1">Resposta</Link>
         </nav>
         <aside>
           <Profile>
